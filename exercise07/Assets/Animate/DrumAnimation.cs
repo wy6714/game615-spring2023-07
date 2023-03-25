@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class DrumAnimation : MonoBehaviour
 {
+    public AudioSource drumSound;
     // Start is called before the first frame update
     void Start()
     {
@@ -16,6 +17,8 @@ public class DrumAnimation : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space))
         {
             GetComponent<Animator>().SetTrigger("DrumPlay");
+            drumSound.Play();
+
         }
     }
 }
