@@ -32,4 +32,13 @@ public class playerController : MonoBehaviour
         cc.Move(transform.forward * y * Time.deltaTime * 5);
 
     }
+
+    //if player collide with battery, then battery will be destroyed
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.CompareTag("battery"))
+        {
+            Destroy(other.gameObject);
+        }
+    }
 }
