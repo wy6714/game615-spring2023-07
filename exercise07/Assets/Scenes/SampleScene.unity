@@ -2669,6 +2669,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1983890695}
+  - component: {fileID: 1983890696}
   m_Layer: 0
   m_Name: Piano
   m_TagString: Untagged
@@ -2683,15 +2684,35 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1983890694}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.07, y: 0.81, z: 0}
+  m_LocalRotation: {x: -0, y: -0.0899682, z: -0, w: 0.9959447}
+  m_LocalPosition: {x: 0.5, y: 0.81, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1208867055}
   m_Father: {fileID: 0}
   m_RootOrder: 7
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -10.324, z: 0}
+--- !u!95 &1983890696
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1983890694}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 8c1a6be57718945f08342e13f18b7b36, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &2000977363
 GameObject:
   m_ObjectHideFlags: 0
@@ -2716,9 +2737,9 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2000977363}
-  m_LocalRotation: {x: 0.10823417, y: -0, z: -0, w: 0.9941254}
-  m_LocalPosition: {x: 0, y: 4.1, z: 10.463895}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: 0.106622055, y: 0.12996097, z: -0.014218704, w: 0.98566717}
+  m_LocalPosition: {x: 5.46, y: 3.57, z: 0.47}
+  m_LocalScale: {x: 0.61109, y: 0.61109, z: 0.61109}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2141532055}
@@ -2736,7 +2757,7 @@ Transform:
   - {fileID: 1290402468}
   m_Father: {fileID: 0}
   m_RootOrder: 8
-  m_LocalEulerAnglesHint: {x: 12.427, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 12.35, y: 15.02, z: -0.019}
 --- !u!114 &2000977365
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2749,6 +2770,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16925e0122f964df7b68124365f47456, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  doSound: {fileID: 227475430}
+  doanim: {fileID: 1237584780}
   reSound: {fileID: 1260616322}
   reanim: {fileID: 461578776}
   miSound: {fileID: 526654586}

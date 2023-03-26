@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class Piano : MonoBehaviour
 {
+    //do
+    public AudioSource doSound;
+    public Animator doanim;
     //re
     public AudioSource reSound;
     public Animator reanim;
@@ -31,6 +34,12 @@ public class Piano : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //do
+        if (Input.GetKeyDown(KeyCode.A))
+        {
+            doanim.SetTrigger("notePlay");
+            doSound.Play();
+        }
         //re
         if (Input.GetKeyDown(KeyCode.S))
         {
