@@ -16,6 +16,12 @@ public class Piano : MonoBehaviour
     //sol
     public AudioSource solSound;
     public Animator solanim;
+    //la
+    public AudioSource laSound;
+    public Animator laanim;
+    //si
+    public AudioSource siSound;
+    public Animator sianim;
     // Start is called before the first frame update
     void Start()
     {
@@ -48,6 +54,18 @@ public class Piano : MonoBehaviour
         {
             solanim.SetTrigger("notePlay");
             solSound.Play();
+        }
+        //la
+        if (Input.GetKeyDown(KeyCode.H))
+        {
+            laanim.SetTrigger("notePlay");
+            laSound.Play();
+        }
+        //si
+        if (Input.GetKeyDown(KeyCode.J))
+        {
+            sianim.SetTrigger("notePlay");
+            siSound.Play();
         }
     }
 }
