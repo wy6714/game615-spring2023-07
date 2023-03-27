@@ -7,7 +7,8 @@ by Yifei Wang
 ### credit
 
 - character
-https://www.kenney.nl/assets/blocky-characters
+  https://www.kenney.nl/assets/blocky-characters
+
 
 Drum by jeremy [CC-BY] via Poly Pizza
 
@@ -22,7 +23,7 @@ Garden by Poly by Google [CC-BY] via Poly Pizza
 Battery by Bruno Oliveira [CC-BY] via Poly Pizza
 
 
-sound:
+- sound:
 
 hand tribal drum: https://mixkit.co/free-sound-effects/drum/
 
