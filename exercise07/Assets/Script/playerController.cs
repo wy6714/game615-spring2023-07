@@ -13,10 +13,19 @@ public class playerController : MonoBehaviour
     public float battery = 1;
     public Image batteryImage;
     public Animator batteryAnim;
+
+    //go to music land
+    public bool batteryReady = false;
+    public Animator gardenAnim;
+    public GameObject Road;
+    //gameObject road = Road;
     //public TextMeshProUGUI batteryText;
     void Start()
     {
 
+
+
+        //Road.SetActive(false);
     }
 
     // Update is called once per frame
@@ -37,6 +46,26 @@ public class playerController : MonoBehaviour
         }
 
         cc.Move(transform.forward * y * Time.deltaTime * 5);
+
+        //check if battery enough
+        if (battery >= 90)
+        {
+            batteryReady = true;
+        }
+        else
+        {
+            batteryReady = false;
+        }
+        //battery enough, move to music land
+        if (batteryReady == true)
+        {
+            gardenAnim.SetTrigger("gardenMove");
+
+            //set player position to (1.6,4.71,15.6)
+            transform.position = new Vector3(3.3f, 0f, -4.3f);
+            //Road.SetActive(true);
+        }
+
 
     }
 
