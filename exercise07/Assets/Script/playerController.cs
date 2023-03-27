@@ -63,6 +63,7 @@ public class playerController : MonoBehaviour
 
             //set player position to (1.6,4.71,15.6)
             transform.position = new Vector3(3.3f, 0f, -4.3f);
+            //Vector3(-3.5,-4.40999699,0)
             //Road.SetActive(true);
         }
 
