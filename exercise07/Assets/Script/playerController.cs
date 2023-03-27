@@ -1,12 +1,19 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.UI;
+using TMPro;
 public class playerController : MonoBehaviour
 {
     // Start is called before the first frame update
     public CharacterController cc;
     public Animator PlayerAnim;
+
+    //battery bar
+    public float battery = 1;
+    public Image batteryImage;
+    public Animator batteryAnim;
+    //public TextMeshProUGUI batteryText;
     void Start()
     {
 
@@ -39,6 +46,10 @@ public class playerController : MonoBehaviour
         if (other.gameObject.CompareTag("battery"))
         {
             Destroy(other.gameObject);
+            battery = battery + 30;
+            //batteryText = battery.ToString();
+            batteryImage.fillAmount = battery / 90;
+            batteryAnim.SetTrigger("ShowMenu");
         }
     }
 }
