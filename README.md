@@ -2,6 +2,8 @@
 
 ## Music Simulator
 
+*use arrow key to control character instead of WASD*
+
 by Yifei Wang
 
 #### open the music
