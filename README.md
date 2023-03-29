@@ -4,9 +4,10 @@
 
 *use arrow key to control character instead of WASD*
 
+*open the music*
+
 by Yifei Wang
 
-#### open the music
 
 [Play](https://wy6714.github.io/game615-spring2023-07/exercise07/play/) | [Source](https://github.com/wy6714/game615-spring2023-07)
 
